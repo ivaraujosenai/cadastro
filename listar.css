@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    padding: 10px;
+}
+
+#lista{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+}
+
+.container-lista{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    border: 1px solid black;
+    gap: 10px;
+    padding: 5px;
+}
+
+.campos{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.campos p{
+    font-weight: bold;
+}
+
+#container-btn-lista{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+button{
+    padding: 10px;
+    border: 0;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+#editar{
+    background-color: green;
+}
+
+#apagar{
+    background-color: red;
+}

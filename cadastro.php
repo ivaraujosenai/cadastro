@@ -83,7 +83,7 @@ if(isset($_POST['nome'])){
         else{
             echo ("CPF inválido!");
         }        
-        //echo "<img height=120 width=120 src='imagens/$nome_foto'>";       
+        //echo "";       
     }
 
 }

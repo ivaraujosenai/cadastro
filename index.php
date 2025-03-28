@@ -11,6 +11,7 @@
     <main>
         <nav>
             <a href="cadastrar.php">Add New</a>
+            <a href="listar.php">Listar</a>
         </nav>
         <h1>LOGIN</h1>
         <section>
