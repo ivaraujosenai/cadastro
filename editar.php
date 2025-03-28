@@ -62,7 +62,7 @@
                 <label for="">SENHA</label>
                 <input type="password" name="senha" id="senha" value="<?php echo $dados['senha'];?>">
                 <label for="">ÁREAS DE INTERESSE</label>
-                <textarea name="areas" id="areas" value="<?php echo $dados['areas'];?>"></textarea>
+                <textarea name="areas" id="areas"><?php echo $dados['areas'];?></textarea>
                 <button type="submit" name="atualizar">Cadastrar</button>
                 <?php }} ?>
             </form>
