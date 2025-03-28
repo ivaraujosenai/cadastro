@@ -13,9 +13,9 @@
         </nav>
         <h1>CADASTRAR</h1>
         <section>
-            <form action="cadastro.php" method="post" encrytpe="multipart/form-data">
+            <form action="cadastro.php" method="post" enctype="multipart/form-data">
                 <label for="">FOTO</label>
-                <input type="file" name="txtFoto">
+                <input type="file" name="foto">
                 <label for="">NOME</label>
                 <input type="text" name="nome" id="nome">
                 <label for="">CPF</label>
