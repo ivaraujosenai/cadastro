@@ -4,16 +4,23 @@
 }
 body{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 main{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 100%;
-    max-width: 600px;
+    max-width:1200px;    
+}
+
+main h1{    
+    margin-bottom: 20px;
 }
 
 section{
@@ -24,35 +31,68 @@ section{
 
 nav{
     display: flex;
-    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;    
     padding: 10px;
 }
 
+nav span{
+    color: blue;
+}
+
+nav a {
+    color: gray;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
 #lista{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    justify-items: stretch;
+    align-items: stretch;
+    justify-content: start;
+    align-content: start;
+    grid-auto-columns: auto;
+    grid-auto-rows: auto;
+    grid-auto-flow: row;
 }
 
 .container-lista{
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
     width: 100%;
-    border: 1px solid black;
+    max-width: 350px;
+    border: 2px solid gray;
+    border-radius: 10px;
     gap: 10px;
+    padding: 10px;
+}
+
+#container-dados{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
     padding: 5px;
+    width: 100%;
 }
 
 .campos{
     display: flex;
     flex-direction: row;
     gap: 5px;
+    padding: 5px;
 }
 
 .campos p{
     font-weight: bold;
+}
+
+.dados{    
+    border-bottom: 1px solid lightgray;
 }
 
 #container-btn-lista{
@@ -75,4 +115,15 @@ button{
 
 #apagar{
     background-color: red;
+}
+
+.container-foto-perfil{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+#foto-perfil{
+    border-radius: 10px;
 }

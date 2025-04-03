@@ -5,10 +5,12 @@
 
 body{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 main{
@@ -28,6 +30,7 @@ section{
 
 nav{
     display: flex;
+    justify-content: end;
     width: 100%;
     padding: 10px;
 }
@@ -36,15 +39,24 @@ form{
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 400px;
+    max-width: 450px;
     border: 1px solid gray;
     border-radius: 10px;
-    padding: 10px;
+    padding: 30px;
+}
+
+#formlogin{
+    max-width: 250px;
+}
+
+label{
+    font-weight: bold;
 }
 
 input{
     padding: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
+    border-radius: 10px;
 }
 
 textarea{
@@ -65,3 +77,25 @@ form button{
     font-weight: bold;
 }
 
+span{
+    color: red;
+}
+
+#btn-cadastro{    
+    color: blue;
+    padding: 10px;
+    border: 0;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.container-foto-perfil{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+#foto-perfil{
+    border-radius: 10px;
+}

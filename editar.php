@@ -1,3 +1,6 @@
+<?php
+    include('validar.php');
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -7,13 +10,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-        <nav>
-            <a href="index.php">Voltar</a>
-        </nav>
+    <main>        
         <h1>EDITAR</h1>
-        <section>
+        <section>                        
             <form action="acoes.php" method="post" enctype="multipart/form-data">
+                <nav>
+                    <a href="listar.php">Voltar</a>
+                </nav>
                 <?php 
                     include('conexao.php');
 
@@ -23,6 +26,8 @@
                     
                         while($dados = mysqli_fetch_array($busca,MYSQLI_ASSOC)){
                 ?>
+                                
+                <input type="hidden" name="id" value="<?php echo $dados['id'];?>">
                 <label for="">FOTO</label>
                 <input type="file" name="foto">
                 <label for="">NOME</label>
@@ -63,7 +68,7 @@
                 <input type="password" name="senha" id="senha" value="<?php echo $dados['senha'];?>">
                 <label for="">ÁREAS DE INTERESSE</label>
                 <textarea name="areas" id="areas"><?php echo $dados['areas'];?></textarea>
-                <button type="submit" name="atualizar">Cadastrar</button>
+                <button type="submit" name="atualizar">Atualizar</button>
                 <?php }} ?>
             </form>
         </section>

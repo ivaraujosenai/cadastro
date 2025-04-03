@@ -1,4 +1,9 @@
-<?php include('conexao.php'); ?>
+<?php
+    if(isset($_GET['erro'])){
+        $erro = $_GET['erro'];
+        echo ("<center><font color='red'>$erro</font></center>");
+    }
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -8,14 +13,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-        <nav>
-            <a href="cadastrar.php">Add New</a>
-            <a href="listar.php">Listar</a>
-        </nav>
+    <main> 
         <h1>LOGIN</h1>
         <section>
-            <form action="" method="post"></form>
+            <form action="login.php" method="post" id="formlogin">
+                <label for="cpf">Usuário</label>
+                <input type="text" name="cpf" id="cpf" placeholder="000.000.000-00">
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" id="senha" placeholder="******">
+                <button type="submit" name="logar">Entrar</button>
+                <nav>
+                    <a href="cadastrar.php" id="btn-cadastro">Cadastrar</a>
+                </nav>
+            </form>
+            
         </section>
     </main>
 </body>

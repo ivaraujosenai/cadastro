@@ -7,13 +7,7 @@
 </head>
 <body>
     <?php 
-    $texto = "111.111.111-11";
-    if (preg_match('/(\d)\1{10}/', $texto)) {
-        return false;
-    }
-    //$limpo = preg_replace('/[.-]/is','',$texto);
-
-    echo ($limpo);
+    
     ?>
 </body>
 </html>
